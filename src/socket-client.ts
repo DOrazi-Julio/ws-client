@@ -1,7 +1,7 @@
 import { Manager, Socket } from "socket.io-client";
 let socket:Socket;
 export const connectToServer = (token:string) => {
-  const manager = new Manager("http://teslo-api-production.up.railway.app/socket.io/socket.io.js",{
+  const manager = new Manager("https://teslo-api-production.up.railway.app/socket.io/socket.io.js",{
     extraHeaders:{
       authentication:token.trim()
     }

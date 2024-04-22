@@ -1,0 +1,110 @@
+/* Estilo para el contenedor principal */
+#app {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 500px; /* Ajusta el ancho máximo para que se vea más parecido a WhatsApp */
+  margin: 0 auto; /* Centra el contenedor */
+}
+
+/* Estilo para el título */
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 20px; /* Tamaño de fuente más grande */
+}
+
+/* Estilo para los botones */
+button {
+  background-color: #25d366; /* Verde de WhatsApp */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #128c7e; /* Cambio de color al pasar el ratón */
+}
+
+/* Estilo para los mensajes de estado del servidor */
+#server-status {
+  color: #25d366; /* Verde de WhatsApp */
+}
+
+/* Estilo para la lista de clientes */
+#client-ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#client-ul li {
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: bold; /* Texto en negrita para resaltar */
+}
+
+/* Estilo para el formulario de mensajes */
+#message-form {
+  margin-top: 20px;
+}
+
+#message-input {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 25px; /* Bordes redondeados */
+  width: calc(100% - 70px); /* Ajuste para el botón de enviar */
+}
+
+#btn-send {
+  background-color: #25d366; /* Verde de WhatsApp */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%; /* Botón redondeado */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#btn-send:hover {
+  background-color: #128c7e; /* Cambio de color al pasar el ratón */
+}
+
+/* Estilo para la lista de mensajes */
+#messages-ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+  max-height: 300px; /* Ajuste de altura máxima para el área de mensajes */
+  overflow-y: auto; /* Barras de desplazamiento vertical cuando sea necesario */
+}
+
+#messages-ul li {
+  background-color: #dcf8c6; /* Color de fondo para los mensajes enviados */
+  border-radius: 20px; /* Bordes redondeados */
+  padding: 10px 15px;
+  margin-bottom: 10px;
+}
+
+#messages-ul li.sent {
+  background-color: #dcf8c6; /* Color de fondo para los mensajes enviados */
+  align-self: flex-end; /* Alinear mensajes enviados a la derecha */
+}
+
+#messages-ul li.received {
+  background-color: #fff; /* Color de fondo para los mensajes recibidos */
+}
+
+#messages-ul li strong {
+  color: #333;
+}
+
+#messages-ul li span {
+  color: #666;
+  display: block; /* Cambia a bloque para envolver el contenido */
+}
